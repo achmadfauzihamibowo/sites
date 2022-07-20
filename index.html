@@ -28,36 +28,30 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/avatar.png">
 
-  <!--Live2D-->
-  <script src="/live2d/L2Dwidget.min.js"></script>
-  <script type="text/javascript">
-    L2Dwidget.init({
-      model: {
-        jsonPath: '/live2d/tororo/assets/tororo.model.json',
-      },
-      display: {
-        superSample: 2,
-        width: 300,
-        height: 300,
-        position: 'right',
-        hOffset: 0,
-        vOffset: 0,
-      },
-      mobile: {
-        show: true,
-        scale: 0.8,
-        motion: true,
-      },
-      react: {
-        opacity: 1,
-      }
-    })
-  </script>
-  <!--Live2D-->
-
 </head>
 
 <body>
+
+  <!--Live2D-->
+  <div id="waifu">
+    <div id="waifu-message"></div>
+    <div class="waifu-tool">
+      <span class="icon-next"></span>
+      <span class="icon-home"></span>
+      <span class="icon-message"></span>
+      <span class="icon-camera"></span>
+      <span class="icon-volumeup"></span>
+      <span class="icon-volumedown"></span>
+      <span class="icon-about"></span>
+      <span class="icon-cross"></span>
+    </div>
+    <canvas id="live2d2"></canvas>
+    <canvas id="live2d4"></canvas>
+  </div>
+  <!--    replace with your path in src    -->
+  <script src="dist/live2d_bundle.js"></script>
+  <script async type="module" src="waifu-tips.js"></script>
+  <!--Live2D-->
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -118,26 +112,26 @@
         -->
 
         <!-- MkDocs -->
-        <a class="button button-reddit" href="https://docs.achmadfhbw.my.id" target="_blank" rel="noopener"> <img class="icon" src="icons/mkdocs.png"
-            alt="MkDocs Logo">Documentation</a>
+        <a class="button button-reddit" href="https://docs.achmadfhbw.my.id" target="_blank" rel="noopener"> <img
+            class="icon" src="icons/mkdocs.png" alt="MkDocs Logo">Documentation</a>
         <!-- Github -->
-        <a class="button button-github" href="https://github.com/achmadfauzihamibowo" target="_blank" rel="noopener"><img class="icon" src="icons/github.svg"
-            alt="GitHub Logo">GitHub</a>
+        <a class="button button-github" href="https://github.com/achmadfauzihamibowo" target="_blank"
+          rel="noopener"><img class="icon" src="icons/github.svg" alt="GitHub Logo">GitHub</a>
         <br>
 
         <!-- Twitter -->
-        <a class="button button-twitter" href="https://twitter.com/achmadfhbw" target="_blank" rel="noopener"><img class="icon"
-            src="icons/twitter.svg" alt="Twitter Logo">Twitter</a>
+        <a class="button button-twitter" href="https://twitter.com/achmadfhbw" target="_blank" rel="noopener"><img
+            class="icon" src="icons/twitter.svg" alt="Twitter Logo">Twitter</a>
         <br>
 
         <!-- Instagram -->
-        <a class="button button-instagram" href="https://instagram.com/achmadfhbw" target="_blank" rel="noopener"><img class="icon"
-            src="icons/instagram.svg" alt="Instagram Logo">Instagram</a>
+        <a class="button button-instagram" href="https://instagram.com/achmadfhbw" target="_blank" rel="noopener"><img
+            class="icon" src="icons/instagram.svg" alt="Instagram Logo">Instagram</a>
         <br>
 
         <!-- Facebook -->
-        <a class="button button-facebook" href="https://facebook.com/achmadfhbw" target="_blank" rel="noopener"><img class="icon"
-            src="icons/facebook.svg" alt="Facebook Logo">Find us on Facebook</a>
+        <a class="button button-facebook" href="https://facebook.com/achmadfhbw" target="_blank" rel="noopener"><img
+            class="icon" src="icons/facebook.svg" alt="Facebook Logo">Find us on Facebook</a>
         <br>
 
         <!-- LinkedIn -->
@@ -151,8 +145,8 @@
         <br>
 
         <!-- Discord -->
-        <a class="button button-discord" href="https://discordapp.com/users/280377891844521985" target="_blank" rel="noopener"><img class="icon"
-            src="icons/discord.svg" alt="Discord Logo">Discord</a>
+        <a class="button button-discord" href="https://discordapp.com/users/280377891844521985" target="_blank"
+          rel="noopener"><img class="icon" src="icons/discord.svg" alt="Discord Logo">Discord</a>
         <br>
 
         <!-- Spotify -->
@@ -166,8 +160,8 @@
         <br>
 
         <!-- Medium -->
-        <a class="button button-medium" href="https://medium.com/@achmadfhbw" target="_blank" rel="noopener"><img class="icon" src="icons/medium.svg"
-            alt="Medium Logo">Medium</a>
+        <a class="button button-medium" href="https://medium.com/@achmadfhbw" target="_blank" rel="noopener"><img
+            class="icon" src="icons/medium.svg" alt="Medium Logo">Medium</a>
         <br>
 
         <!-- Pinterest -->
@@ -181,13 +175,13 @@
         <br>
 
         <!-- Email -->
-        <a class="button button-default" href="mailto:achmadfhwork@gmail.com" target="_blank" rel="noopener"><img class="icon" src="icons/email.svg"
-            alt="Email Icon">achmadfhwork</a>
+        <a class="button button-default" href="mailto:achmadfhwork@gmail.com" target="_blank" rel="noopener"><img
+            class="icon" src="icons/email.svg" alt="Email Icon">achmadfhwork</a>
         <br>
 
         <!-- Telegram -->
-        <a class="button button-telegram" href="https://web.telegram.org/z#@achmadfhbw" target="_blank" rel="noopener"><img class="icon"
-            src="icons/telegram.svg" alt="Telegram Logo">Telegram</a>
+        <a class="button button-telegram" href="https://web.telegram.org/z#@achmadfhbw" target="_blank"
+          rel="noopener"><img class="icon" src="icons/telegram.svg" alt="Telegram Logo">Telegram</a>
         <br>
 
         <!-- Tumblr -->
