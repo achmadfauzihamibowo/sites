@@ -3,69 +3,78 @@
 
 <head>
 
-  <!-- Page Information
+    <!-- Page Information
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>🌲 Achmad Fauzi Hamibowo</title>
-  <meta name="description" content="Find us online!">
-  <meta name="author" content="Seth Cottle">
+    <meta charset="utf-8">
+    <title>LittleLink</title>
+    <meta name="description" content="Find us online!">
+    <meta name="author" content="Seth Cottle">
 
-  <!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
+    <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
 
-  <!-- CSS
+
+    <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton-light.css">
-  <link rel="stylesheet" href="css/brands.css">
+    <link rel="stylesheet" href="css/normalize.css">
 
-  <!-- Favicon
+    <!-- Themes:
+         Auto:   css/skeleton-auto.css
+         Light:  css/skeleton-light.css
+         Dark:   css/skeleton-dark.css
+  -->
+    <link rel="stylesheet" href="css/skeleton-auto.css">
+
+    <link rel="stylesheet" href="css/brands.css">
+
+
+    <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/avatar.png">
+    <link rel="icon" type="image/png" href="images/avatar.png">
 
-  <!--Live2D-->
-  <script src="live2d/L2Dwidget.min.js"></script>
-  <script type="text/javascript">
-    L2Dwidget.init({
-      model: {
-        jsonPath: 'live2d/hijiki/assets/hijiki.model.json',
-      },
-      display: {
-        superSample: 2,
-        width: 300,
-        height: 300,
-        position: 'right',
-        hOffset: 0,
-        vOffset: 0,
-      },
-      mobile: {
-        show: true,
-        scale: 0.8,
-        motion: true,
-      },
-      react: {
-        opacity: 1,
-      }
-    })
-  </script>
-  <!--Live2D-->
+    <!--Live2D-->
+    <script src="live2d/L2Dwidget.min.js"></script>
+    <script type="text/javascript">
+        L2Dwidget.init({
+            model: {
+                jsonPath: 'live2d/hijiki/assets/hijiki.model.json',
+            },
+            display: {
+                superSample: 2,
+                width: 300,
+                height: 300,
+                position: 'right',
+                hOffset: 0,
+                vOffset: 0,
+            },
+            mobile: {
+                show: true,
+                scale: 0.8,
+                motion: true,
+            },
+            react: {
+                opacity: 1,
+            }
+        })
+    </script>
+    <!--Live2D-->
 
 </head>
 
 <body>
 
-  <!-- Primary Page Layout
+    <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="column" style="margin-top: 10%">
+    <div class="container">
+        <div class="row">
+            <div class="column" style="margin-top: 10%">
 
-        <!-- 
+                <!-- 
 
           ## Getting Started with LittleLink
 
@@ -73,25 +82,27 @@
 
           You can add your own brand or others brands you may need in the `css/brands.css` file. 
 
+          You can add custom icons to `images/icons/...`. It is recommended to use a 24x24 .SVG.
+
           Edit the "Your Image Here" section to add your own personal branding, like a picture of yourself or your brand logo!
 
-          Edit the "Your Name" section to change the page heading. You can use something like your name, your social handle, or your brand name.
+          Edit the "Title" section to change the page heading. You can use something like your name, your social handle, or your brand name.
 
           Edit the "Short Bio" section tell users about yourself or your brand.
 
         -->
 
-        <!-- Your Image Here -->
-        <img src="images/avatar.png" srcset="images/avatar@2x.png 2x" alt="LittleLink Logo">
+                <!-- Your Image Here -->
+                <img src="images/avatar.png" class="avatar" srcset="images/avatar@2x.png 2x" alt="LittleLink Logo">
 
-        <!-- Your Name -->
-        <h1>Achmad Fauzi Hamibowo</h1>
+                <!-- Title -->
+                <h1>Achmad Fauzi Hamibowo</h1>
 
-        <!-- Short Bio -->
-        <p>Halo, Perkenalkan saya <b>Achmad Fauzi Hamibowo!</b> 👦</p>
-        <p>Ini adalah navigasi untuk social media saya 🗺️</p>
+                <!-- Short Bio -->
+                <p>Halo, Perkenalkan saya <b>Achmad Fauzi Hamibowo!</b> 👦</p>
+                <p>Ini adalah navigasi untuk social media saya 🗺️</p>
 
-        <!--
+                <!--
 
           ## Breaking down <a> attributes:
           
@@ -117,110 +128,147 @@
 
         -->
 
-        <!-- MkDocs -->
-        <a class="button button-reddit" href="https://docs.achmadfhbw.my.id" target="_blank" rel="noopener"> <img
-            class="icon" src="icons/mkdocs.png" alt="MkDocs Logo">Documentation</a>
-        <!-- Github -->
-        <a class="button button-github" href="https://github.com/achmadfauzihamibowo" target="_blank"
-          rel="noopener"><img class="icon" src="icons/github.svg" alt="GitHub Logo">GitHub</a>
-        <br>
+                <!-- MkDocs -->
+                <a class="button button-web" href="https://docs.achmadfhbw.my.id" target="_blank" rel="noopener">
+                    <img class="icon" src="images/icons/tux.svg" alt="MkDocs Logo">Documentation</a>
+                <br>
 
-        <!-- Twitter -->
-        <a class="button button-twitter" href="https://twitter.com/achmadfhbw" target="_blank" rel="noopener"><img
-            class="icon" src="icons/twitter.svg" alt="Twitter Logo">Twitter</a>
-        <br>
+                <!-- GitHub -->
+                <a class="button button-github" href="https://github.com/achmadfauzihamibowo" target="_blank"
+                    rel="noopener">
+                    <img class="icon" src="images/icons/github.svg" alt="GitHub Logo">GitHub</a>
+                <br>
 
-        <!-- Instagram -->
-        <a class="button button-instagram" href="https://instagram.com/achmadfhbw" target="_blank" rel="noopener"><img
-            class="icon" src="icons/instagram.svg" alt="Instagram Logo">Instagram</a>
-        <br>
+                <!-- Twitter -->
+                <a class="button button-twit" href="https://twitter.com/achmadfhbw" target="_blank" rel="noopener">
+                    <img class="icon" src="images/icons/twitter.svg" alt="Twitter Logo">Twitter</a>
+                <br>
 
-        <!-- Facebook -->
-        <a class="button button-facebook" href="https://facebook.com/achmadfhbw" target="_blank" rel="noopener"><img
-            class="icon" src="icons/facebook.svg" alt="Facebook Logo">Find us on Facebook</a>
-        <br>
+                <!-- Instagram -->
+                <a class="button button-instagram" href="https://instagram.com/achmadfhbw" target="_blank"
+                    rel="noopener">
+                    <img class="icon" src="images/icons/instagram.svg" alt="Instagram Logo">Instagram</a>
+                <br>
 
-        <!-- LinkedIn -->
-        <a class="button button-linkedin" href="#" target="_blank" rel="noopener"><img class="icon"
-            src="icons/linkedin.svg" alt="LinkedIn Logo">LinkedIn</a>
-        <br>
+                <!-- Facebook -->
+                <a class="button button-faceb" href="https://facebook.com/achmadfhbw" target="_blank" rel="noopener">
+                    <img class="icon" src="images/icons/facebook.svg" alt="Facebook Logo">Find us on Facebook</a>
+                <br>
 
-        <!-- YouTube -->
-        <a class="button button-youtube" href="#" target="_blank" rel="noopener"><img class="icon"
-            src="icons/youtube.svg" alt="YouTube Logo">YouTube</a>
-        <br>
+                <!-- LinkedIn -->
+                <a class="button button-linked" href="#" target="_blank" rel="noopener">
+                    <img class="icon" src="images/icons/linkedin.svg" alt="LinkedIn Logo">LinkedIn</a>
+                <br>
 
-        <!-- Discord -->
-        <a class="button button-discord" href="https://discordapp.com/users/280377891844521985" target="_blank"
-          rel="noopener"><img class="icon" src="icons/discord.svg" alt="Discord Logo">Discord</a>
-        <br>
+                <!-- YouTube -->
+                <a class="button button-yt" href="#" target="_blank" rel="noopener">
+                    <img class="icon" src="images/icons/youtube.svg" alt="YouTube Logo">YouTube</a>
+                <br>
 
-        <!-- Spotify -->
-        <a class="button button-spotify" href="#" target="_blank" rel="noopener"><img class="icon"
-            src="icons/spotify.svg" alt="Spotify Logo">Spotify</a>
-        <br>
+                <!-- Discord -->
+                <a class="button button-discord" href="https://discordapp.com/users/280377891844521985" target="_blank"
+                    rel="noopener">
+                    <img class="icon" src="images/icons/discord.svg" alt="Discord Logo">Discord</a>
+                <br>
 
-        <!-- Reddit -->
-        <a class="button button-reddit" href="#" target="_blank" rel="noopener"><img class="icon" src="icons/reddit.svg"
-            alt="Reddit Logo">Reddit</a>
-        <br>
+                <!-- Spotify -->
+                <a class="button button-spotify" href="#" target="_blank" rel="noopener">
+                    <img class="icon" src="images/icons/spotify.svg" alt="Spotify Logo">Spotify</a>
+                <br>
 
-        <!-- Medium -->
-        <a class="button button-medium" href="https://medium.com/@achmadfhbw" target="_blank" rel="noopener"><img
-            class="icon" src="icons/medium.svg" alt="Medium Logo">Medium</a>
-        <br>
+                <!-- Reddit -->
+                <a class="button button-reddit" href="#" target="_blank" rel="noopener">
+                    <img class="icon" src="images/icons/reddit.svg" alt="Reddit Logo">Reddit</a>
+                <br>
 
-        <!-- Pinterest -->
-        <a class="button button-pinterest" href="#" target="_blank" rel="noopener"><img class="icon"
-            src="icons/pinterest.svg" alt="Pinterest Logo">Follow on Pinterest</a>
-        <br>
+                <!-- Medium -->
+                <a class="button button-medium" href="https://medium.com/@achmadfhbw" target="_blank" rel="noopener">
+                    <img class="icon" src="images/icons/medium.svg" alt="Medium Logo">Medium</a>
+                <br>
 
-        <!-- TikTok -->
-        <a class="button button-tiktok" href="#" target="_blank" rel="noopener"><img class="icon" src="icons/tiktok.svg"
-            alt="TikTok Logo">TikTok</a>
-        <br>
+                <!-- TikTok -->
+                <a class="button button-tiktok" href="#" target="_blank" rel="noopener">
+                    <img class="icon" src="images/icons/tiktok.svg" alt="TikTok Logo">TikTok</a>
+                <br>
 
-        <!-- Email -->
-        <a class="button button-default" href="mailto:achmadfhwork@gmail.com" target="_blank" rel="noopener"><img
-            class="icon" src="icons/email.svg" alt="Email Icon">achmadfhwork</a>
-        <br>
+                <!-- Email -->
+                <a class="button button-default" href="mailto:achmadfhwork@gmail.com" target="_blank" rel="noopener">
+                    <img class="icon" src="images/icons/email.svg" alt="Email Icon">achmadfhwork</a>
+                <br>
 
-        <!-- Telegram -->
-        <a class="button button-telegram" href="https://web.telegram.org/z#@achmadfhbw" target="_blank"
-          rel="noopener"><img class="icon" src="icons/telegram.svg" alt="Telegram Logo">Telegram</a>
-        <br>
+                <!-- Blog -->
+                <a class="button button-default" href="https://achmadfauzihamibowo.github.io/" target="_blank"
+                    rel="noopener">
+                    <img class="icon" src="images/icons/blog.svg" alt="Blog Icon">Blog</a>
+                <br>
 
-        <!-- Tumblr -->
-        <a class="button button-tumblr" href="#" target="_blank" rel="noopener"><img class="icon" src="icons/tumblr.svg"
-            alt="Tumblr Logo">Tumblr</a>
-        <br>
+                <!-- Telegram -->
+                <a class="button button-telegram" href="https://web.telegram.org/z#@achmadfhbw" target="_blank"
+                    rel="noopener">
+                    <img class="icon" src="images/icons/telegram.svg" alt="Telegram Logo">Telegram</a>
+                <br>
 
-        <!-- Steam -->
-        <a class="button button-steam" href="#" target="_blank" rel="noopener"><img class="icon" src="icons/steam.svg"
-            alt="Steam Logo">Steam</a>
-        <br>
+                <!-- Trello -->
+                <a class="button button-trello" href="#" target="_blank" rel="noopener">
+                    <img class="icon" src="images/icons/trello.svg" alt="Trello Logo">Trello</a>
+                <br>
 
-        <!-- Wordpress -->
-        <a class="button button-wordpress" href="#" target="_blank" rel="noopener"><img class="icon"
-            src="icons/wordpress.svg" alt="Wordpress Logo">Wordpress</a>
-        <br>
+                <!-- Notion -->
+                <a class="button button-notion" href="#" target="_blank" rel="noopener">
+                    <img class="icon" src="images/icons/notion.svg" alt="Notion Logo">Notion</a>
+                <br>
 
-        <br>
+                <!-- Steam -->
+                <a class="button button-steam" href="#" target="_blank" rel="noopener">
+                    <img class="icon" src="images/icons/steam.svg" alt="Steam Logo">Steam</a>
+                <br>
 
-        <footer>
-          ©2022 Achmad Fauzi Hamibowo
-          <p>
-            Made with ❤️ in Depok, West Java
-          </p>
-          <p>Build your own by forking <a href="https://littlelink.io" target="_blank" rel="noopener">LittleLink</a>.
-          </p>
-        </footer>
+                <!-- PayPal-->
+                <a class="button button-paypal" href="#" target="_blank" rel="noopener">
+                    <img class="icon" src="images/icons/paypal.svg" alt="PayPal Logo">PayPal</a>
+                <br>
 
-      </div>
+                <!-- WhatsApp -->
+                <a class="button button-whatsapp" href="https://wa.me/6285155124110" target="_blank" rel="noopener">
+                    <img class="icon" src="images/icons/whatsapp.svg" alt="WhatsApp Logo">WhatsApp</a>
+                <br>
+
+                <!-- Signal -->
+                <a class="button button-signal" href="#" target="_blank" rel="noopener">
+                    <img class="icon" src="images/icons/signal.svg" alt="Signal Logo">Signal</a>
+                <br>
+
+                <!-- Buy Me a Coffee -->
+                <a class="button button-coffee" href="#" target="_blank" rel="noopener">
+                    <img class="icon" src="images/icons/coffee.svg" alt="Buy Me a Coffee">Buy Me a Coffee</a>
+                <br>
+
+                <!-- Ko-fi -->
+                <a class="button button-ko-fi" href="#" target="_blank" rel="noopener">
+                    <img class="icon" src="images/icons/ko-fi.svg" alt="Ko-fi">Ko-fi</a>
+                <br>
+
+                <!-- VRChat -->
+                <a class="button button-vrchat" href="#" target="_blank" rel="noopener">
+                    <img class="icon" src="images/icons/vrchat.svg" alt="VRChat Logo">VRChat</a>
+                <br>
+
+                <br>
+                <!-- 
+            Footer:
+            This includes a link to privacy.html page which can be setup for your Privacy Policy.
+            This also includes a link to the LittleLink repository to make forking LittleLink easier.
+            You can edit or remove anything here to make your own footer.
+        -->
+                <p><a href="privacy.html">Privacy Policy</a> <br> ©2022 Achmad Fauzi Hamibowo | Made with ❤️ in Depok,
+                    West Java <br> Build your own by forking <a href="https://littlelink.io" target="_blank"
+                        rel="noopener">LittleLink</a></p>
+
+            </div>
+        </div>
     </div>
-  </div>
 
-  <!-- End Document
+    <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 
