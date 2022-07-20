@@ -28,30 +28,36 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/avatar.png">
 
+  <!--Live2D-->
+  <script src="live2d/L2Dwidget.min.js"></script>
+  <script type="text/javascript">
+    L2Dwidget.init({
+      model: {
+        jsonPath: 'live2d/hijiki/assets/hijiki.model.json',
+      },
+      display: {
+        superSample: 2,
+        width: 300,
+        height: 300,
+        position: 'right',
+        hOffset: 0,
+        vOffset: 0,
+      },
+      mobile: {
+        show: false,
+        scale: 0.8,
+        motion: true,
+      },
+      react: {
+        opacity: 1,
+      }
+    })
+  </script>
+  <!--Live2D-->
+
 </head>
 
 <body>
-
-  <!--Live2D-->
-  <div id="waifu">
-    <div id="waifu-message"></div>
-    <div class="waifu-tool">
-      <span class="icon-next"></span>
-      <span class="icon-home"></span>
-      <span class="icon-message"></span>
-      <span class="icon-camera"></span>
-      <span class="icon-volumeup"></span>
-      <span class="icon-volumedown"></span>
-      <span class="icon-about"></span>
-      <span class="icon-cross"></span>
-    </div>
-    <canvas id="live2d2"></canvas>
-    <canvas id="live2d4"></canvas>
-  </div>
-  <!--    replace with your path in src    -->
-  <script src="dist/live2d_bundle.js"></script>
-  <script async type="module" src="waifu-tips.js"></script>
-  <!--Live2D-->
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
